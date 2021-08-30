@@ -8,5 +8,5 @@ include_directories(${SDL2_INCLUDE_DIR})
 
 file(COPY textures DESTINATION .)
 
-add_executable(sdlteste main.cpp)
-target_link_libraries(sdlteste SDL2main SDL2)
+add_executable(sdl_bullethell main.cpp)
+target_link_libraries(sdl_bullethell SDL2main SDL2)
