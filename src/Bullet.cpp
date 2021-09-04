@@ -25,13 +25,6 @@ public:
     {
         SDL_Rect sprite_pos = {(int) this->pos.x, (int) this->pos.y, 16, 10}; // MOVE AWAY
         SDL_RenderCopyEx(renderer, this->texture, NULL, &sprite_pos, rotation, NULL, SDL_FLIP_NONE);
-
-
-        Vector2d center = this->pos;
-        center.x += 8;
-        center.y += 5;
-
-        const double length = 300.0;
     }
 
     void rotate(double ang)
